@@ -20,7 +20,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const data = [{ label: 'First', value: 'first' }, { label: 'Second', value: 'second' }, { label: 'Third', value: 'third' }];
+const data = [{ label: 'data1', value: 'data1' }, { label: 'data2', value: 'data2' }, { label: 'data3', value: 'data3' }];
 
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args

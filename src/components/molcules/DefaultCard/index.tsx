@@ -22,7 +22,7 @@ export const Card = ({
 
   return (
     <div className="relative max-w-sm overflow-hidden bg-white border rounded-lg shadow-sm border-neutral-200/60">
-      <Image src={content.img} className="relative object-cover w-full h-full" alt="pokemon image" />
+      <Image src={content.img} className="relative object-cover w-full h-full" alt="pokemon image" width="0" height="0" sizes="100vw" style={{ width: '100%', height: 'auto' }} />
       <div className=" z-50 flex items-center w-full mt-2  px-7">
         <a href="https://twitter.com/adamwathan" target="_blank" className="block mt-6">
           <h5 className="text-lg font-bold leading-none tracking-tight text-neutral-900">{content.channelName}</h5>
