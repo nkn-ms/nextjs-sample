@@ -4,6 +4,7 @@ import './globals.css'
 import { ThemeProvider } from "@/material-tailwind/index";
 import { ReduxProvider } from '@/app/_redux/index';
 import { LinkHeader } from '@/components/molcules/LinkHeader/index'
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,8 @@ export default function RootLayout({
       <ThemeProvider>
         <html lang="en">
           <body className={`${inter.className} ${style}`} >
+            <GoogleTagManager gtmId="G-ERMX7KKS11" />
+            <GoogleAnalytics gaId="G-ERMX7KKS11" />
             <link
               rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
