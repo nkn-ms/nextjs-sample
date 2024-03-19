@@ -9,6 +9,7 @@ import {
   CardFooter,
   Chip,
   Input,
+  IconButton,
   Typography,
   ThemeProvider
 } from "@material-tailwind/react";
@@ -22,6 +23,7 @@ export {
   CardFooter,
   Chip,
   Input,
+  IconButton,
   Typography,
   ThemeProvider
 }

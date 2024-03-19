@@ -1,9 +1,11 @@
 "use client"
 import { Input, Button } from '@/material-tailwind/index';
 import { getPokemonData } from '@/domain/pokemon/index'
-import { updatePokemonData } from "@/lib/pokemonData/index";
+import { updatePokemonData } from '@/lib/pokemonData/index';
 import { updatePokemonInputData } from "@/lib/pokemonInputData/index";
 import { useAppSelector, useAppDispatch } from '@/lib/hooks';
+import { IconButton } from '@/material-tailwind/index'
+import Link from 'next/link'
 
 export default function Home() {
   const data1 = useAppSelector(state => state.pokemonInputData.data[1])
@@ -69,7 +71,13 @@ export default function Home() {
           storybook,
           pokemonAPI,
         </div>
-
+      </div>
+      <div className='mt-8 max-w-12'>
+        <Link href='https://github.com/nkn-ms/nextjs-sample' target='_blank'>
+          <IconButton className="rounded bg-[#333333] hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]/10">
+            <i className="fab fa-github text-lg" />
+          </IconButton>
+        </Link>
       </div>
     </main>
   );
