@@ -1,29 +1,23 @@
-import { Chip, ChipProps } from "@material-tailwind/react";
+import { Chip } from "@material-tailwind/react";
 import { colors } from "@material-tailwind/react/types/generic";
 import {
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
-  Typography,
 } from "@/material-tailwind/index";
 import Image from "next/image";
 
 interface CardProps {
-  size?: 'small' | 'medium' | 'large';
-  label?: string;
-  content?: any
+  content: PokemonData
 }
 
-import { PokemonTypeName, pokemonColorMap } from '@/types/pokemon/index'
+import { PokemonData, PokemonTypeName, pokemonColorMap } from '@/types/pokemon/index'
 
 function convertPokmonTypeToColor(pokemonType: PokemonTypeName): colors | undefined {
   return pokemonColorMap[pokemonType]
 }
 
 export const PokemonCard = ({
-  size = 'medium',
-  label,
   content,
   ...props
 }: CardProps) => {

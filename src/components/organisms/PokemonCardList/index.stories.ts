@@ -21,48 +21,46 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 
-const contents = [{
-	name: "Bulbasaur",
-	category: "Seed Pokémon",
-	type: ['grass', 'poison'],
-	height: '7',
-	weight: '69',
-	id: '1',
-	flavor_text: "A strange seed was\nplanted on its\nback at birth.\fThe plant sprouts\nand grows with\nthis POKéMON.",
-	img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
-},
-{
-	name: "Bulbasaur",
-	category: "Seed Pokémon",
-	type: ['grass', 'poison'],
-	height: '7',
-	weight: '69',
-	id: '1',
-	flavor_text: "A strange seed was\nplanted on its\nback at birth.\fThe plant sprouts\nand grows with\nthis POKéMON.",
-	img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
-},
-{
-	name: "Bulbasaur",
-	category: "Seed Pokémon",
-	type: ['grass', 'poison'],
-	height: '7',
-	weight: '69',
-	id: '1',
-	flavor_text: "A strange seed was\nplanted on its\nback at birth.\fThe plant sprouts\nand grows with\nthis POKéMON.",
-	img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
-}]
+const contents = [
+	{
+		img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
+		id: '1',
+		name: 'Bulbasaur',
+		category: 'Seed Pokémon',
+		height: '7',
+		weight: '69',
+		type: ['grass', 'poison'],
+	},
+
+	{
+		img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png',
+		id: '4',
+		name: 'charmander',
+		category: 'Lizard Pokémon',
+		height: '6',
+		weight: '85',
+		type: ['fire'],
+	},
+	{
+		img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png',
+		id: '7',
+		name: 'Squirtle',
+		category: 'Tiny Turtle Pokémon',
+		height: '5',
+		weight: '90',
+		type: ['water'],
+	},
+];
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
 	args: {
-		label: 'Card',
 		contents: contents
 	},
 };
 
 export const NoData: Story = {
 	args: {
-		label: 'Card',
 		contents: []
 	},
 };

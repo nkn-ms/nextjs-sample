@@ -35,14 +35,12 @@ const content = {
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
 	args: {
-		label: 'Card',
 		content: content
 	},
 };
 
 export const Primary: Story = {
 	args: {
-		label: 'Card',
 		content: content
 	},
 	decorators: [
