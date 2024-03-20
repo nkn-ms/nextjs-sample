@@ -36,10 +36,17 @@ export const PokemonTable = ({
           </tr>
         </thead>
         <tbody>
+          {(TABLE_ROWS.length === 0) &&
+            <tr>
+              <td className="text-center" colSpan={TABLE_HEAD.length}>
+                No Data
+              </td>
+            </tr>
+          }
+
           {TABLE_ROWS.map((pokemon, index) => {
             const isLast = index === TABLE_ROWS.length - 1;
             const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
-
             return (
               <tr key={pokemon.name}>
                 <td className={classes}>

@@ -13,7 +13,6 @@ const meta = {
 	tags: ['autodocs'],
 	// More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 	argTypes: {
-		backgroundColor: { control: 'color' },
 	},
 } satisfies Meta<typeof PokemonTable>;
 
@@ -56,8 +55,14 @@ const TABLE_ROWS = [
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
 	args: {
-		label: 'PokemonTable',
 		TABLE_HEAD,
 		TABLE_ROWS
+	},
+};
+
+export const NoData: Story = {
+	args: {
+		TABLE_HEAD,
+		TABLE_ROWS: []
 	},
 };
