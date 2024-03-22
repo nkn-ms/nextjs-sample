@@ -68,6 +68,7 @@ export default function Home() {
           typescript,
           redux,
           material tailwind,
+          atomic design,
           storybook,
           pokemonAPI,
         </div>
