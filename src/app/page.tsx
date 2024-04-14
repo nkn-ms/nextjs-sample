@@ -80,6 +80,10 @@ export default function Home() {
           </IconButton>
         </Link>
       </div>
+      <div className='mt-8 flex text-center'>
+        <i className='fa-regular fa-envelope text-2xl mr-2' />
+        nkn-ms@hotmail.co.jp
+      </div>
     </main>
   );
 }
